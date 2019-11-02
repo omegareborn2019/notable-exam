@@ -45,15 +45,6 @@ export default class PatientList extends React.Component{
     })
   }
 
-  searchMovie(newName){
-    const newPatients = this.state.patients.filter(patient =>{
-      return patient.patientName === newName;
-    })
-    this.setState({
-      patients: newPatients
-    })
-  }
-
   deletePatient(id){
     const newPatients = this.state.patients.filter(patient =>{
       return patient.patientId !== id;
