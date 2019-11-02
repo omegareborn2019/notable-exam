@@ -1,16 +1,13 @@
 import React from 'react';
 import PatientListEntry from './PatientListEntry.jsx';
 import NewPatientForm from './NewPatientForm.jsx';
-import DoctorList from './DoctorList.jsx'
-import uuid from 'uuid/v4';
 import $ from 'jquery'
 
 export default class PatientList extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      patients: [],
-      doctors: [{name: "Daniel"}, {name: "Alice"}, {name: "Jason"}]
+      patients: []
     }
     this.createPatient = this.createPatient.bind(this);
     this.deletePatient = this.deletePatient.bind(this);
@@ -93,15 +90,10 @@ export default class PatientList extends React.Component{
       updatePatient={this.updatePatient}
       />
     })
-    const doctors = this.state.doctors.map((doc, index)=>{
-      return <DoctorList key={index} id={uuid()} name={doc.name}/>
-    })
     return(
       <div className="container">
-        <div>
-          {doctors}
-        </div>
-        <NewPatientForm createPatient={this.createPatient} />
+          <NewPatientForm createPatient={this.createPatient} />
+        <p></p>
         <ul className="list-group">
           {patients}
         </ul>

@@ -10,3 +10,4 @@ Instructions:
 this should seed the database OR you can run schema file using some kind syntax.
 4, open you brower and go to http://localhost:3000/ => this should show everything.
 
+Note: I could have made doctors button working if I chose to use hardcoded data, database took me a long time to seed.
