@@ -1,7 +1,12 @@
+Language: javascript
+Frame: ReactJS
+Database: mySQL
 
-# Movie Browser App
+Instructions:
+1, open terminal and run npm install
+2, then run npm run build, then npm run nodemon
+3, go to server folder => database folder => schema.sql => uncomment and copy everything
+=> in a new terminal type mysql -uroot, once you are in the database => paste everything into the database
+this should seed the database OR you can run schema file using some kind syntax.
+4, open you brower and go to http://localhost:3000/ => this should show everything.
 
-## Getting Started
-
-- Fork and Clone this repo
-- Build the app https://gist.github.com/beth/3e7eb34ff1a46b674d40ece896c593c2
