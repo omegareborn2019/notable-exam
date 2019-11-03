@@ -6,7 +6,7 @@ export default class NewPatientForm extends React.Component{
     super(props);
     this.state ={
       name: "",
-      time: 1200,
+      time: "",
       kind: ""
     }
     this.handleChange = this.handleChange.bind(this);
@@ -45,18 +45,16 @@ export default class NewPatientForm extends React.Component{
         />
         <input 
         placeholder="Enter APP Time"
-        type="decimal"
+        type="time"
         name="time"
         value={this.state.time}
         onChange={this.handleChange}
         />
-        <input 
-        placeholder="Enter Patient Kind"
-        type="text"
-        name="kind"
-        value={this.state.kind}
-        onChange={this.handleChange}
-        />
+        <select name="kind" value={this.state.kind} onChange={this.handleChange}>
+          <option value="">Select</option>
+          <option value="New Patient">New Patient</option>
+          <option value="Follow-up">Follow-up</option>
+        </select>
         <button>Add</button>
       </form>
     )

@@ -15,9 +15,9 @@ export default class PatientListEntry extends React.Component{
     return(
       <div>
         <li className="list-group-item">
-          {this.props.name} ----
-          {this.props.time} ----
-          {this.props.kind}
+          Name: {this.props.name} ----
+          Time: {this.props.time} ----
+          Type: {this.props.kind}
         </li>
         <button type="button" className="btn btn-info" onClick={this.handleDelete}>X</button>
       </div>
