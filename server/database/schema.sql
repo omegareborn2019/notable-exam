@@ -1,6 +1,6 @@
 -- CREATE DATABASE IF NOT EXISTS doctor;
 
--- USE doctor_app;
+-- USE doctor;
 
 -- CREATE TABLE app_table (
 --   id INT PRIMARY KEY AUTO_INCREMENT,
